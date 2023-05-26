@@ -1,19 +1,9 @@
-import { About } from './sections/About'
-import { Main } from './sections/Main'
-import { Navbar } from './sections/Navbar'
-import { Skills } from './sections/Skills'
-import { Projects } from './sections/Projects'
-import { Contact } from './sections/Contact'
+import { Routing } from '../../React/Red-Social/client/src/router/Routing'
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Main />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Routing />
     </>
   )
 }

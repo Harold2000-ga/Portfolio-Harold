@@ -1,36 +1,50 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { CiMenuBurger } from 'react-icons/ci'
 import { AiOutlineClose } from 'react-icons/ai'
 import { IconsNavBar } from '../components/Icons'
+import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
+  const [shadow, setShadow] = useState(false)
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true)
+      } else {
+        setShadow(false)
+      }
+    }
+    window.addEventListener('scroll', handleShadow)
+  }, [])
 
   const handleNav = () => {
     setNav(!nav)
   }
   return (
-    <nav className='fixed w-full h-20 shadow-xl z-[100]'>
+    <nav className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <img src='../src/assets/Logo.png' alt='Logo' className='w-[150] h-[80]' />
-
+        <a href='/#Home'>
+          <img src='../src/assets/Logo.png' alt='Logo' className='w-[150] h-[80]' />
+        </a>
         <div>
           {/* Nav md and xl device */}
           <ul className='hidden md:flex'>
-            <a to='/'>
+            <a href='/#Home'>
               <li className='ml-10 text-sm uppercase hover:border-b-2 border-primary'>Home</li>
             </a>
-            <a to='/'>
+            <a href='/#about'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>About</li>
             </a>
-            <a to='/'>
+            <a href='/#Skills'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Skill</li>
             </a>
-            <a to='/'>
+            <a href='/#Projects'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Project</li>
             </a>
-            <a to='/'>
+            <a href='/#Contact'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Contact</li>
             </a>
           </ul>
@@ -63,19 +77,19 @@ export const Navbar = () => {
           </div>
           <div className='py-4 flex flex-col'>
             <ul>
-              <a to='/'>
+              <a href='/'>
                 <li className='py-4 text-sm'>Home</li>
               </a>
-              <a to='/'>
+              <a href='/'>
                 <li className='py-4 text-sm'>About</li>
               </a>
-              <a to='/'>
+              <a href='/'>
                 <li className='py-4 text-sm'>Skills</li>
               </a>
-              <a to='/'>
+              <a href='/'>
                 <li className='py-4 text-sm'>Projects</li>
               </a>
-              <a to='/'>
+              <a href='/'>
                 <li className='py-4 text-sm'>Contact</li>
               </a>
             </ul>

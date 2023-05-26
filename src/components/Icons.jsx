@@ -54,3 +54,21 @@ export const IconsNavBar = () => {
     </div>
   )
 }
+export const IconsContact = () => {
+  return (
+    <div className='flex items-center justify-between py-4 '>
+      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+        <ImGithub size={25} />
+      </div>
+      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+        <RiLinkedinFill size={25} />
+      </div>
+      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+        <AiOutlineMail size={25} />
+      </div>
+      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+        <BsFillPersonLinesFill size={25} />
+      </div>
+    </div>
+  )
+}
