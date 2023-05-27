@@ -1,4 +1,4 @@
-import { Routing } from '../../React/Red-Social/client/src/router/Routing'
+import { Routing } from './routes/routes'
 
 function App() {
   return (

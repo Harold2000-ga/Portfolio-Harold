@@ -1,20 +1,17 @@
-import { BrowserRouter } from 'react-router-dom'
-import { About } from '../sections/About'
-import { Main } from '../sections/Main'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 import { Navbar } from '../sections/Navbar'
-import { Skills } from '../sections/Skills'
-import { Projects } from '../sections/Projects'
-import { Contact } from '../sections/Contact'
+import { PagePrincipal } from '../pages/PagePrincipal'
+import { Property } from '../sections/Property'
 
 export const Routing = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <Main />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Routes>
+        <Route path='/' element={<PagePrincipal />} />
+        <Route path='/property' element={<Property />} />
+      </Routes>
     </BrowserRouter>
   )
 }

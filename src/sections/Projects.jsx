@@ -11,7 +11,7 @@ export const Projects = () => {
           title='Laptop testing'
           description='MERN STACK'
           image={about1}
-          projectUrl='/about1'
+          projectUrl='/property'
         />
         <ProjectItem
           title='Laptop testing1'

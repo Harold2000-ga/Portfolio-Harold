@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export const ProjectItem = ({ title, image, projectUrl, description }) => {
   return (
     <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-blue-400 to-blue-900'>
@@ -9,11 +11,11 @@ export const ProjectItem = ({ title, image, projectUrl, description }) => {
       <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
         <h3 className='text-2xl text-white tracking-wider text-center '>{title}</h3>
         <p className='pb-4 pt-2 text-white tracking-widest'>{description}</p>
-        <a href={projectUrl}>
+        <Link to={projectUrl}>
           <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
             More Info
           </p>
-        </a>
+        </Link>
       </div>
     </div>
   )

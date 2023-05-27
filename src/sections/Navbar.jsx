@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { CiMenuBurger } from 'react-icons/ci'
 import { AiOutlineClose } from 'react-icons/ai'
 import { IconsNavBar } from '../components/Icons'
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -26,27 +26,27 @@ export const Navbar = () => {
   return (
     <nav className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <a href='/#Home'>
+        <HashLink to='/#Home'>
           <img src='../src/assets/Logo.png' alt='Logo' className='w-[150] h-[80]' />
-        </a>
+        </HashLink>
         <div>
           {/* Nav md and xl device */}
           <ul className='hidden md:flex'>
-            <a href='/#Home'>
+            <HashLink to='/#Home'>
               <li className='ml-10 text-sm uppercase hover:border-b-2 border-primary'>Home</li>
-            </a>
-            <a href='/#about'>
+            </HashLink>
+            <HashLink to='/#about'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>About</li>
-            </a>
-            <a href='/#Skills'>
+            </HashLink>
+            <HashLink to='/#Skills'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Skill</li>
-            </a>
-            <a href='/#Projects'>
+            </HashLink>
+            <HashLink to='/#Projects'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Project</li>
-            </a>
-            <a href='/#Contact'>
+            </HashLink>
+            <HashLink to='/#Contact'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Contact</li>
-            </a>
+            </HashLink>
           </ul>
           <div onClick={handleNav} className='md:hidden cursor-pointer'>
             <CiMenuBurger size={36} />
@@ -77,21 +77,31 @@ export const Navbar = () => {
           </div>
           <div className='py-4 flex flex-col'>
             <ul>
-              <a href='/'>
-                <li className='py-4 text-sm'>Home</li>
-              </a>
-              <a href='/'>
-                <li className='py-4 text-sm'>About</li>
-              </a>
-              <a href='/'>
-                <li className='py-4 text-sm'>Skills</li>
-              </a>
-              <a href='/'>
-                <li className='py-4 text-sm'>Projects</li>
-              </a>
-              <a href='/'>
-                <li className='py-4 text-sm'>Contact</li>
-              </a>
+              <HashLink to='/#Home'>
+                <li onClick={handleNav} className='py-4 text-sm'>
+                  Home
+                </li>
+              </HashLink>
+              <HashLink to='/#about'>
+                <li onClick={handleNav} className='py-4 text-sm'>
+                  About
+                </li>
+              </HashLink>
+              <HashLink to='/#Skills'>
+                <li onClick={handleNav} className='py-4 text-sm'>
+                  Skills
+                </li>
+              </HashLink>
+              <HashLink to='/#Projects'>
+                <li onClick={handleNav} className='py-4 text-sm'>
+                  Projects
+                </li>
+              </HashLink>
+              <HashLink to='/#Contact'>
+                <li onClick={handleNav} className='py-4 text-sm'>
+                  Contact
+                </li>
+              </HashLink>
             </ul>
             <div className='py-20'>
               <p className='uppercase tracking-widest text-primary'>LET'S CONNEct</p>
