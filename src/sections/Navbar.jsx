@@ -5,6 +5,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { IconsNavBar } from '../components/Icons'
 import { HashLink } from 'react-router-hash-link'
 import { useLocation } from 'react-router-dom'
+import logo from '../../src/assets/Logo.png'
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -45,7 +46,7 @@ export const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <HashLink to='/#Home'>
-          <img src='../src/assets/Logo.png' alt='Logo' className='w-[150] h-[80]' />
+          <img src={logo} alt='Logo' className='w-[150] h-[80]' />
         </HashLink>
         <div>
           {/* Nav md and xl device */}
@@ -57,7 +58,7 @@ export const Navbar = () => {
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>About</li>
             </HashLink>
             <HashLink to='/#Skills'>
-              <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Skills</li>
+              <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Skill</li>
             </HashLink>
             <HashLink to='/#Projects'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Project</li>

@@ -1,5 +1,6 @@
 import { IconsContact } from '../components/Icons'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
+import { imageContact } from '../../src/assets/about2.jpg'
 
 export const Contact = () => {
   const handleSubmit = e => {
@@ -28,7 +29,7 @@ export const Contact = () => {
               <div>
                 <img
                   className='rounded-xl hover:scale-105 ease-in duration-300 object-cover'
-                  src='../../src/assets/about2.jpg'
+                  src={imageContact}
                   alt='/'
                 />
               </div>
