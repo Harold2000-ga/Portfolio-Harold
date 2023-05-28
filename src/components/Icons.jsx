@@ -96,19 +96,32 @@ export const IconsNavBar = () => {
 }
 export const IconsContact = () => {
   return (
-    <div className='flex items-center justify-between py-4 '>
-      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+    <div className='flex items-center justify-start gap-4  py-4 '>
+      <a
+        href='https://wa.link/6smnk9'
+        rel='noopener noreferrer'
+        target='_blank'
+        className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'
+      >
         <ImWhatsapp size={25} />
-      </div>
-      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-        <BsMessenger size={25} />
-      </div>
-      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+      </a>
+
+      <a
+        href='mailto:haroldgutierrezhga@gmail.com?body=Hi,%20I%20was%20looking%20at%20your%20portfolio%20and'
+        rel='noopener noreferrer'
+        target='_blank'
+        className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'
+      >
         <AiOutlineMail size={25} />
-      </div>
-      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+      </a>
+      <a
+        href='https://t.me/Harold00Gutierrez'
+        rel='noopener noreferrer'
+        target='_blank'
+        className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'
+      >
         <ImTelegram size={25} />
-      </div>
+      </a>
     </div>
   )
 }

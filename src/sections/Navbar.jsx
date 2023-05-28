@@ -4,10 +4,25 @@ import { CiMenuBurger } from 'react-icons/ci'
 import { AiOutlineClose } from 'react-icons/ai'
 import { IconsNavBar } from '../components/Icons'
 import { HashLink } from 'react-router-hash-link'
+import { useLocation } from 'react-router-dom'
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
+  const [navBg, setNavBg] = useState('#ecf0f3')
+  const [colorText, setColorText] = useState('black')
+
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.pathname === '/property') {
+      setColorText('#ececec')
+      setNavBg('transparent')
+    } else {
+      setColorText('black')
+      setNavBg('#ecf0f3')
+    }
+  }, [location])
 
   useEffect(() => {
     const handleShadow = () => {
@@ -24,14 +39,17 @@ export const Navbar = () => {
     setNav(!nav)
   }
   return (
-    <nav className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+    <nav
+      style={{ background: navBg }}
+      className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}
+    >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <HashLink to='/#Home'>
           <img src='../src/assets/Logo.png' alt='Logo' className='w-[150] h-[80]' />
         </HashLink>
         <div>
           {/* Nav md and xl device */}
-          <ul className='hidden md:flex'>
+          <ul style={{ color: colorText }} className='hidden md:flex'>
             <HashLink to='/#Home'>
               <li className='ml-10 text-sm uppercase hover:border-b-2 border-primary'>Home</li>
             </HashLink>
@@ -39,7 +57,7 @@ export const Navbar = () => {
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>About</li>
             </HashLink>
             <HashLink to='/#Skills'>
-              <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Skill</li>
+              <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Skills</li>
             </HashLink>
             <HashLink to='/#Projects'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Project</li>
