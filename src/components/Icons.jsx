@@ -1,7 +1,7 @@
 import { RiLinkedinFill } from 'react-icons/ri'
 import { ImGithub, ImTelegram, ImWhatsapp } from 'react-icons/im'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsFacebook, BsInstagram, BsMessenger, BsTwitter } from 'react-icons/bs'
+import { BsFacebook, BsTwitter } from 'react-icons/bs'
 
 export const IconsMain = () => {
   return (

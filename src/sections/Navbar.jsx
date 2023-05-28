@@ -5,7 +5,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { IconsNavBar } from '../components/Icons'
 import { HashLink } from 'react-router-hash-link'
 import { useLocation } from 'react-router-dom'
-import logo from '../../src/assets/Logo.png'
+import logo from '../assets/Others/Logo.png'
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false)

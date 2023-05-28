@@ -1,6 +1,6 @@
 import { IconsContact } from '../components/Icons'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
-import { imageContact } from '../../src/assets/about2.jpg'
+import imageContact from '../assets/Others/about2.jpg'
 
 export const Contact = () => {
   const handleSubmit = e => {
@@ -90,7 +90,7 @@ export const Contact = () => {
                   <label className='uppercase text-sm py-2'>Message</label>
                   <textarea
                     name='message'
-                    className='border-1 rounded-lg border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-primary'
+                    className='border-1 rounded-lg border-gray-300 p-3 focus:outline-none focus:ring-1 focus:ring-primary'
                     rows='10'
                   />
                 </div>

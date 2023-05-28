@@ -1,6 +1,6 @@
 import { ProjectItem } from '../components/ProjectItem'
-import about1 from '../../src/assets/about1.jpg'
-import about2 from '../../src/assets/about2.jpg'
+import about1 from '../../src/assets/Others/about1.jpg'
+import about2 from '../../src/assets/Others/about2.jpg'
 export const Projects = () => {
   return (
     <div id='Projects' className='max-w-[1240px] mx-auto px-2 py-16'>

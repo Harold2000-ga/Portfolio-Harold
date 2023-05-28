@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-
+import about1 from '../assets/Others/about1.jpg'
 export const About = () => {
   return (
     <article id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
@@ -27,7 +27,7 @@ export const About = () => {
         </div>
         <div className='w-full h-auto mx-auto shadow-xl rounded-xl shadow-gray-400 flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 '>
           <img
-            src='../src/assets/about1.jpg'
+            src={about1}
             alt='Programer laptop'
             className='w-full h-full rounded-xl object-fit '
           />
