@@ -1,5 +1,12 @@
 import { IconsSkill } from '../components/Icons'
 import html from '../assets/skills/HTML.png'
+import css from '../assets/skills/CSS.png'
+import js from '../assets/skills/JavaScript.png'
+import tailwind from '../assets/skills/Tailwind.png'
+import react from '../assets/skills/React.png'
+import node from '../assets/skills/Node JS.png'
+import mongo from '../assets/skills/Mongo DB.png'
+import git from '../assets/skills/Git.png'
 
 export const Skills = () => {
   return (
@@ -9,13 +16,13 @@ export const Skills = () => {
         <h2 className='py-4'>What I Can do</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
           <IconsSkill name='HTML' icon={html} />
-          <IconsSkill name='CSS' icon={html} />
-          <IconsSkill name='JavaScript' icon={html} />
-          <IconsSkill name='Tailwind' icon={html} />
-          <IconsSkill name='React' icon={html} />
-          <IconsSkill name='Node JS' icon={html} />
-          <IconsSkill name='Mongo DB' icon={html} />
-          <IconsSkill name='Git' icon={html} />
+          <IconsSkill name='CSS' icon={css} />
+          <IconsSkill name='JavaScript' icon={js} />
+          <IconsSkill name='Tailwind' icon={tailwind} />
+          <IconsSkill name='React' icon={react} />
+          <IconsSkill name='Node JS' icon={node} />
+          <IconsSkill name='Mongo DB' icon={mongo} />
+          <IconsSkill name='Git' icon={git} />
         </div>
       </div>
     </div>
