@@ -5,7 +5,7 @@ export const Property = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative '>
-        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10'></div>
+        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'></div>
         <img src='../../src/assets/about2.jpg' alt='Casa' className='object-fill w-full h-full' />
         <div className='text-white p-2 z-10 absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
           <h2 className='py-2'>Property Finder</h2>
@@ -22,10 +22,14 @@ export const Property = () => {
             totam architecto! Exercitationem nostrum blanditiis dolorum! Possimus vero voluptatem,
             neque vel ipsam quasi, enim autem ea a, tempore magni velit sint reprehenderit. Tempore,
             placeat molestiae molestias, laborum ea similique omnis facere nam, voluptates nostrum
-            deleniti aliquam?
+            deleniti aliquam asdasdad 13123 312312 313123 123123 12?
           </p>
-          <button className='px-8 py-3 mt-4 mr-8'>Demo</button>
-          <button className='px-8 py-3 mt-4'>Code</button>
+          <a className='px-8 py-3 mt-4 mr-8  bg-primary opacity-80 text-white uppercase rounded-lg cursor-pointer hover:opacity-100 shadow-gray-400 shadow-xl'>
+            Demo
+          </a>
+          <a className='inline-block px-8 py-3 mt-4 bg-primary opacity-80 text-white uppercase rounded-lg cursor-pointer hover:opacity-100 shadow-gray-400 shadow-xl'>
+            Code
+          </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>

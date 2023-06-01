@@ -58,7 +58,7 @@ export const Contact = () => {
                     <input
                       type='text'
                       name='name'
-                      className='border-2 rounded-lg p-3 flex border-gray-400 focus:outline-none focus:ring-1 focus:ring-primary'
+                      className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary'
                     />
                   </div>
                   <div className='flex flex-col'>
@@ -66,7 +66,7 @@ export const Contact = () => {
                     <input
                       type='text'
                       name='number'
-                      className='border-2 rounded-lg p-3 flex border-gray-400 focus:outline-none focus:ring-1 focus:ring-primary'
+                      className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary'
                     />
                   </div>
                 </div>
@@ -75,7 +75,7 @@ export const Contact = () => {
                   <input
                     type='email'
                     name='email'
-                    className='border-2 rounded-lg p-3 flex border-gray-400  w-full focus:outline-none focus:ring-1 focus:ring-primary'
+                    className='border-2 rounded-lg p-3 flex border-gray-300  w-full focus:outline-none focus:ring-1 focus:ring-primary'
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -83,20 +83,20 @@ export const Contact = () => {
                   <input
                     type='text'
                     name='subject'
-                    className='border-2 rounded-lg p-3 flex border-gray-400  w-full focus:outline-none focus:ring-1 focus:ring-primary'
+                    className='border-2 rounded-lg p-3 flex border-gray-300  w-full focus:outline-none focus:ring-1 focus:ring-primary'
                   />
                 </div>
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Message</label>
                   <textarea
                     name='message'
-                    className='border-1 rounded-lg border-gray-300 p-3 focus:outline-none focus:ring-1 focus:ring-primary'
+                    className='border-2 rounded-lg border-gray-300 p-3 focus:outline-none focus:ring-1 focus:ring-primary'
                     rows='10'
                   />
                 </div>
                 <input
                   type='submit'
-                  className='text-gray-100 w-full p-4 mt-4 bg-slate-500 cursor-pointer hover:bg-slate-800 ease-in duration-300'
+                  className='text-gray-100 w-full p-4 mt-4 bg-primary opacity-80  cursor-pointer hover:opacity-100 ease-in duration-300'
                   value='Send Message'
                 />
               </form>

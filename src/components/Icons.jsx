@@ -41,12 +41,12 @@ export const IconsMain = () => {
     </div>
   )
 }
-export const IconsSkill = ({ name }) => {
+export const IconsSkill = ({ name, icon }) => {
   return (
     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
       <div className='grid grid-col-2 gap-4 justify-center items-center'>
         <div className='mx-auto'>
-          <img src={`../../src/assets/skills/${name}.png`} alt='HTML ICON' className=' w-24 h-24' />
+          <img src={icon} alt='HTML ICON' className=' w-24 h-24' />
         </div>
         <div className='flex flex-col item-center justify-center mx-auto'>
           <h3>{name}</h3>

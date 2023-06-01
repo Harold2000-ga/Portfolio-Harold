@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export const ProjectItem = ({ title, image, projectUrl, description }) => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-blue-400 to-blue-900'>
+    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-t from-[#073e33] to-[#0f969c]'>
       <img
         src={image}
         alt='Programer laptop'

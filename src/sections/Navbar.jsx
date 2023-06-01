@@ -10,7 +10,7 @@ import logo from '../assets/Others/Logo.png'
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
-  const [navBg, setNavBg] = useState('#ecf0f3')
+  const [navBg, setNavBg] = useState('white')
   const [colorText, setColorText] = useState('black')
 
   const location = useLocation()
@@ -21,7 +21,7 @@ export const Navbar = () => {
       setNavBg('transparent')
     } else {
       setColorText('black')
-      setNavBg('#ecf0f3')
+      setNavBg('white')
     }
   }, [location])
 
@@ -46,7 +46,7 @@ export const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <HashLink to='/#Home'>
-          <img src={logo} alt='Logo' className='w-[150] h-[80]' />
+          <img src={logo} alt='Logo' className='w-28 h-14 md:w-32 md:h-16' />
         </HashLink>
         <div>
           {/* Nav md and xl device */}
