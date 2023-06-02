@@ -1,29 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from 'react'
-import { CiMenuBurger } from 'react-icons/ci'
 import { AiOutlineClose } from 'react-icons/ai'
 import { IconsNavBar } from '../components/Icons'
 import { HashLink } from 'react-router-hash-link'
-import { useLocation } from 'react-router-dom'
-import logo from '../assets/Others/Logo.png'
+import { RiMenuFill } from 'react-icons/ri'
+import logo from '../assets/Others/Logo1.png'
+import logoSmall from '../assets/Others/LogoSmall.png'
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
-  const [navBg, setNavBg] = useState('white')
-  const [colorText, setColorText] = useState('black')
-
-  const location = useLocation()
-
-  useEffect(() => {
-    if (location.pathname === '/property') {
-      setColorText('#ececec')
-      setNavBg('transparent')
-    } else {
-      setColorText('black')
-      setNavBg('white')
-    }
-  }, [location])
 
   useEffect(() => {
     const handleShadow = () => {
@@ -41,8 +27,11 @@ export const Navbar = () => {
   }
   return (
     <nav
-      style={{ background: navBg }}
-      className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}
+      className={
+        shadow
+          ? 'fixed w-full h-20 shadow-xl z-[100] bg-secondary'
+          : ' bg-secondary fixed w-full h-20 z-[100]'
+      }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <HashLink to='/#Home'>
@@ -50,7 +39,7 @@ export const Navbar = () => {
         </HashLink>
         <div>
           {/* Nav md and xl device */}
-          <ul style={{ color: colorText }} className='hidden md:flex'>
+          <ul className='hidden md:flex text-[#e6e9e8] pr-8'>
             <HashLink to='/#Home'>
               <li className='ml-10 text-sm uppercase hover:border-b-2 border-primary'>Home</li>
             </HashLink>
@@ -68,7 +57,7 @@ export const Navbar = () => {
             </HashLink>
           </ul>
           <div onClick={handleNav} className='md:hidden cursor-pointer'>
-            <CiMenuBurger size={36} />
+            <RiMenuFill size={36} color='#e6e9e8' />
           </div>
         </div>
       </div>
@@ -77,12 +66,12 @@ export const Navbar = () => {
         <div
           className={
             nav
-              ? 'fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+              ? 'fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#e6e9e8] p-10 ease-in duration-500'
               : 'fixed top-0 left-[-100%] ease-in duration-500'
           }
         >
-          <div className='flex w-full items-center justify-between'>
-            <img src='../src/assets/logo.png' alt='Logo' />
+          <div className='flex w-full items-center justify-between '>
+            <img src={logoSmall} alt='Logo' />
 
             <div
               onClick={handleNav}
