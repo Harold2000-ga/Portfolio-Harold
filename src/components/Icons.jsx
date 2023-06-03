@@ -5,7 +5,7 @@ import { BsFacebook, BsTwitter } from 'react-icons/bs'
 
 export const IconsMain = () => {
   return (
-    <div className='flex items-center justify-between max-w-[330px] mx-auto py-4 gap-6'>
+    <div className='flex items-center justify-center max-w-[330px] mx-auto py-4 gap-6'>
       <a
         href='https://www.linkedin.com/in/harold-guti%C3%A9rrez'
         rel='noopener noreferrer'
@@ -43,7 +43,7 @@ export const IconsMain = () => {
 }
 export const IconsSkill = ({ name, icon }) => {
   return (
-    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-secondary text-[#e6e4e8]'>
       <div className='grid grid-col-2 gap-4 justify-center items-center'>
         <div className='mx-auto'>
           <img src={icon} alt='HTML ICON' className=' w-24 h-24' />

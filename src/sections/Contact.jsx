@@ -26,7 +26,7 @@ export const Contact = () => {
           {/* Left */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='lg:p-4 h-full'>
-              <div>
+              <div className=' shadow-xl shadow-gray-400 rounded-xl p-2 bg-secondary'>
                 <img
                   className='rounded-xl hover:scale-105 ease-in duration-300 object-cover'
                   src={imageContact}
@@ -45,7 +45,7 @@ export const Contact = () => {
             </div>
           </div>
           {/* Right */}
-          <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+          <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400  rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
                 action='https://getform.io/f/42c2fb6f-1e6a-461b-afa9-3f798588c08a'
@@ -96,7 +96,7 @@ export const Contact = () => {
                 </div>
                 <input
                   type='submit'
-                  className='text-gray-100 w-full p-4 mt-4 bg-primary opacity-80  cursor-pointer hover:opacity-100 ease-in duration-300'
+                  className='text-[#e6e4e8] mx-auto block  p-4 rounded-lg  mt-4 bg-primary opacity-80  cursor-pointer hover:opacity-100 ease-in duration-300'
                   value='Send Message'
                 />
               </form>

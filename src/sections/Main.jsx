@@ -14,13 +14,13 @@ export const Main = () => {
             Let's Build something together
           </p>
           <h1 className='py-4'>
-            Hello, I'm<span className='text-primary'> Harold Gutierrez</span>
+            Hello, I'm<span className='text-primary'> Harold Gutiérrez</span>
           </h1>
-          <h2 className=' font-light pb-5'>Front-End Web Developer</h2>
+          <h2 className=' font-light pt-2 pb-5'>Front-End Web Developer</h2>
 
           <IconsMain />
         </div>
-        <div className='w-full h-full max-h-[250px] max-w-[150px] md:max-h-[470px] md:max-w-[300px] shadow-xl rounded-xl shadow-gray-400 bg-secondary flex items-center justify-center p-2 md:p-4 hover:scale-105 ease-in duration-300 '>
+        <div className='w-full h-full max-h-[250px] max-w-[150px] md:max-h-[470px] md:max-w-[350px] shadow-xl rounded-xl shadow-gray-400 bg-secondary flex items-center justify-center p-2 hover:scale-105 ease-in duration-300 '>
           <img
             src={profile}
             alt='Programer laptop'
