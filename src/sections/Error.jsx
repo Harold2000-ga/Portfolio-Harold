@@ -7,6 +7,7 @@ export const Error = () => {
         <div className='flex items-center justify-center gap-3'>
           <RiFileWarningFill color='#ffd95a' size={25} />
           <h2 className='text-[#e4e6e9] text-2xl'>Error --- Page Not Found</h2>
+          <p></p>
         </div>
       </div>
     </div>

@@ -1,21 +1,8 @@
 import { IconsContact } from '../components/Icons'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
-import imageContact from '../assets/Others/about2.jpg'
+import imageContact from '../assets/Others/Contactme.jpg'
 
 export const Contact = () => {
-  const handleSubmit = e => {
-    //Get form
-    e.preventDefault()
-    const formData = new FormData(e.target)
-    const messageObject = {}
-
-    for (let [name, value] of formData) {
-      messageObject[name] = value
-    }
-    // Send form to email
-    //
-  }
-
   return (
     <div id='Contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] mx-auto px-2 py-16 w-full'>
@@ -28,7 +15,7 @@ export const Contact = () => {
             <div className='lg:p-4 h-full'>
               <div className=' shadow-xl shadow-gray-400 rounded-xl p-2 bg-secondary'>
                 <img
-                  className='rounded-xl hover:scale-105 ease-in duration-300 object-cover'
+                  className='rounded-xl hover:scale-105 ease-in duration-300 w-full max-h-[400px] object-fill'
                   src={imageContact}
                   alt='/'
                 />
