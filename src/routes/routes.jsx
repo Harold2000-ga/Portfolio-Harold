@@ -11,7 +11,7 @@ export const Routing = () => {
       <Routes>
         <Route path='/' element={<PagePrincipal />} />
         <Route path='/property' element={<Property />} />
-        <Route path='*' element={<Error />} />
+        <Route path='*' element={<PagePrincipal />} />
       </Routes>
     </BrowserRouter>
   )
