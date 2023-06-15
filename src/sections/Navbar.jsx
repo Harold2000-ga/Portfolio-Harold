@@ -47,7 +47,7 @@ export const Navbar = () => {
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>About</li>
             </HashLink>
             <HashLink to='/#Skills'>
-              <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Skill</li>
+              <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Skills</li>
             </HashLink>
             <HashLink to='/#Projects'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Project</li>
