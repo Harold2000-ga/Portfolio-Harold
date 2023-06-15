@@ -46,7 +46,7 @@ export const IconsSkill = ({ name, icon }) => {
     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-secondary text-[#e6e4e8]'>
       <div className='grid grid-col-2 gap-4 justify-center items-center'>
         <div className='mx-auto'>
-          <img src={icon} alt='HTML ICON' className=' w-24 h-24' />
+          <img src={icon} loading='lazy' alt='Skill ICON' className=' w-24 h-24' />
         </div>
         <div className='flex flex-col item-center justify-center mx-auto'>
           <h3>{name}</h3>

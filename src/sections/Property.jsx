@@ -6,7 +6,12 @@ export const Property = () => {
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative '>
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'></div>
-        <img src='../../src/assets/about2.jpg' alt='Casa' className='object-fill w-full h-full' />
+        <img
+          src='../../src/assets/about2.jpg'
+          loading='lazy'
+          alt='Casa'
+          className='object-fill w-full h-full'
+        />
         <div className='text-white p-2 z-10 absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
           <h2 className='py-2'>Property Finder</h2>
           <h3>React JS /Tailwind /Firebase</h3>

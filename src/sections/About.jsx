@@ -27,6 +27,7 @@ export const About = () => {
         </div>
         <div className='w-full h-auto mx-auto shadow-xl rounded-xl shadow-gray-400 flex items-center justify-center p-2 bg-secondary hover:scale-105 ease-in duration-300 '>
           <img
+            loading='lazy'
             src={about1}
             alt='Programer laptop'
             className='w-full h-full rounded-xl object-fit '

@@ -35,7 +35,7 @@ export const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <HashLink to='/#Home'>
-          <img src={logo} alt='Logo' className='w-28 h-14 md:w-32 md:h-16' />
+          <img src={logo} loading='lazy' alt='Logo' className='w-28 h-14 md:w-32 md:h-16' />
         </HashLink>
         <div>
           {/* Nav md and xl device */}
@@ -71,7 +71,7 @@ export const Navbar = () => {
           }
         >
           <div className='flex w-full items-center justify-between '>
-            <img src={logoSmall} alt='Logo' />
+            <img src={logoSmall} loading='lazy' alt='Logo' />
 
             <div
               onClick={handleNav}

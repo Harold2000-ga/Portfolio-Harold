@@ -22,6 +22,7 @@ export const Main = () => {
         </div>
         <div className='w-full h-full max-h-[250px] max-w-[150px] md:max-h-[470px] md:max-w-[350px] shadow-xl rounded-xl shadow-gray-400 bg-secondary flex items-center justify-center p-2 hover:scale-105 ease-in duration-300 '>
           <img
+            loading='lazy'
             src={profile}
             alt='Programer laptop'
             className='w-full h-full   rounded-xl object-fit '

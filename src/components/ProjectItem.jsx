@@ -8,6 +8,7 @@ export const ProjectItem = ({ title, image, projectUrl, description }) => {
           src={image}
           alt='Programer laptop'
           className='w-full  max-h-[400px] rounded-xl object-fit group-hover:opacity-20'
+          loading='lazy'
         />
       </div>
       <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>

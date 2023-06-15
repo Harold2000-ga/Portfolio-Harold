@@ -18,6 +18,7 @@ export const Contact = () => {
                   className='rounded-xl hover:scale-105 ease-in duration-300 w-full max-h-[400px] object-fill'
                   src={imageContact}
                   alt='/'
+                  loading='lazy'
                 />
               </div>
               <div>
