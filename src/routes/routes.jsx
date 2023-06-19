@@ -8,8 +8,8 @@ export const Routing = () => {
     <BrowserRouter basename='Portfolio'>
       <Navbar />
       <Routes path='/'>
+        <Route path='/reactsocial' element={<ReactSocial />} />
         <Route index element={<PagePrincipal />} />
-        <Route path='reactsocial' element={<ReactSocial />} />
         <Route path='*' element={<PagePrincipal />} />
       </Routes>
     </BrowserRouter>
