@@ -6,10 +6,13 @@ import { HashLink } from 'react-router-hash-link'
 import { RiMenuFill } from 'react-icons/ri'
 import logo from '../assets/Others/Logo1.png'
 import logoSmall from '../assets/Others/LogoSmall.png'
+import { useLocation } from 'react-router-dom'
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
+  const [navBg, setNavBg] = useState('#83a4e4')
+  const location = useLocation()
 
   useEffect(() => {
     const handleShadow = () => {
@@ -19,22 +22,26 @@ export const Navbar = () => {
         setShadow(false)
       }
     }
+    if (window.location.pathname.includes('reactsocial')) {
+      setNavBg('transparent')
+    }
+    if (!window.location.pathname.includes('reactsocial')) {
+      setNavBg('#3a4e48')
+    }
+    console.log(location)
     window.addEventListener('scroll', handleShadow)
-  }, [])
+  }, [location.pathname])
 
   const handleNav = () => {
     setNav(!nav)
   }
   return (
     <nav
-      className={
-        shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100] bg-secondary'
-          : ' bg-secondary fixed w-full h-20 z-[100]'
-      }
+      style={{ backgroundColor: navBg }}
+      className={`fixed w-full h-20 ${shadow ? 'shadow-xl' : ''} z-[100] bg-secondary`}
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <HashLink to='/#Home'>
+        <HashLink to='#Home'>
           <img src={logo} loading='lazy' alt='Logo' className='w-28 h-14 md:w-32 md:h-16' />
         </HashLink>
         <div>
@@ -50,7 +57,7 @@ export const Navbar = () => {
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Skills</li>
             </HashLink>
             <HashLink to='/#Projects'>
-              <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Project</li>
+              <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Projects</li>
             </HashLink>
             <HashLink to='/#Contact'>
               <li className='ml-10 text-sm uppercase hover:border-b-2  border-primary'>Contact</li>

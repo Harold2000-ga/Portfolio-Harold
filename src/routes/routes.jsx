@@ -1,15 +1,15 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Navbar } from '../sections/Navbar'
 import { PagePrincipal } from '../pages/PagePrincipal'
-import { Property } from '../sections/Property'
+import { ReactSocial } from '../sections/ReactSocial'
 
 export const Routing = () => {
   return (
-    <BrowserRouter basename='/Portfolio'>
+    <BrowserRouter basename='Portfolio'>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<PagePrincipal />} />
-        <Route path='/property' element={<Property />} />
+      <Routes path='/'>
+        <Route index element={<PagePrincipal />} />
+        <Route path='reactsocial' element={<ReactSocial />} />
         <Route path='*' element={<PagePrincipal />} />
       </Routes>
     </BrowserRouter>

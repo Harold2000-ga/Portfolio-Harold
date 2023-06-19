@@ -1,5 +1,5 @@
 import { ProjectItem } from '../components/ProjectItem'
-import about1 from '../../src/assets/Others/about1.jpg'
+import ReactSocialImage from '../../src/assets/Others/ReactSocial.png'
 import about2 from '../../src/assets/Others/about2.jpg'
 export const Projects = () => {
   return (
@@ -8,10 +8,10 @@ export const Projects = () => {
       <h2 className='py-4'> What I have built</h2>
       <div className='grid md:grid-cols-2 gap-8'>
         <ProjectItem
-          title='Laptop testing'
+          title='React Social'
           description='MERN STACK'
-          image={about1}
-          projectUrl='/property'
+          image={ReactSocialImage}
+          projectUrl='/reactsocial'
         />
         <ProjectItem
           title='Laptop testing1'
@@ -22,7 +22,7 @@ export const Projects = () => {
         <ProjectItem
           title='Laptop testing3'
           description='React Js'
-          image={about1}
+          image={ReactSocialImage}
           projectUrl='/about1'
         />
         <ProjectItem
