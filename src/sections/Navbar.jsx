@@ -11,15 +11,19 @@ import { useLocation } from 'react-router-dom'
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
-  const [navBg, setNavBg] = useState('#83a4e4')
+  const [navBg, setNavBg] = useState('#3a4e48')
   const location = useLocation()
 
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
         setShadow(true)
+        setNavBg('#3a4e48')
       } else {
         setShadow(false)
+        if (location.pathname.includes('reactsocial') || location.pathname.includes('bg-remove')) {
+          setNavBg('transparent')
+        }
       }
     }
 
