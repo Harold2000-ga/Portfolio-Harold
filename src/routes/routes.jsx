@@ -6,7 +6,7 @@ import { BgRemove } from '../pages/BgRemove'
 
 export const Routing = () => {
   return (
-    <BrowserRouter basename='Portfolio'>
+    <BrowserRouter>
       <Navbar />
       <Routes path='/'>
         <Route path='/reactsocial' element={<ReactSocial />} />

@@ -23,6 +23,8 @@ export const Navbar = () => {
         setShadow(false)
         if (location.pathname.includes('reactsocial') || location.pathname.includes('bg-remove')) {
           setNavBg('transparent')
+        } else {
+          setNavBg('#3a4e48')
         }
       }
     }
