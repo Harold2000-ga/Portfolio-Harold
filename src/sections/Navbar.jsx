@@ -22,12 +22,13 @@ export const Navbar = () => {
         setShadow(false)
       }
     }
-    if (window.location.pathname.includes('reactsocial')) {
+
+    if (location.pathname.includes('reactsocial') || location.pathname.includes('bg-remove')) {
       setNavBg('transparent')
-    }
-    if (!window.location.pathname.includes('reactsocial')) {
+    } else {
       setNavBg('#3a4e48')
     }
+
     console.log(location)
     window.addEventListener('scroll', handleShadow)
   }, [location.pathname])
@@ -41,7 +42,7 @@ export const Navbar = () => {
       className={`fixed w-full h-20 ${shadow ? 'shadow-xl' : ''} z-[100] bg-secondary`}
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <HashLink to='#Home'>
+        <HashLink to='/#Home'>
           <img src={logo} loading='lazy' alt='Logo' className='w-28 h-14 md:w-32 md:h-16' />
         </HashLink>
         <div>

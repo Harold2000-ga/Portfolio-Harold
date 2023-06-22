@@ -25,7 +25,7 @@ export const About = () => {
             Check out some of my latest projects
           </p>
         </div>
-        <div className='w-full h-auto mx-auto shadow-xl rounded-xl shadow-gray-400 flex items-center justify-center p-2 bg-secondary hover:scale-105 ease-in duration-300 '>
+        <div className='w-full h-auto mx-auto shadow-xl rounded-xl shadow-gray-400 flex items-center justify-center p-1 bg-secondary hover:scale-105 ease-in duration-300 '>
           <img
             loading='lazy'
             src={about1}

@@ -1,6 +1,6 @@
 import { ProjectItem } from '../components/ProjectItem'
 import ReactSocialImage from '../../src/assets/Others/ReactSocial.png'
-import about2 from '../../src/assets/Others/about2.jpg'
+import BackgroundRemoval from '../../src/assets/Others/bg-remove.png'
 export const Projects = () => {
   return (
     <div id='Projects' className='max-w-[1240px] mx-auto px-2 py-16'>
@@ -14,10 +14,10 @@ export const Projects = () => {
           projectUrl='/reactsocial'
         />
         <ProjectItem
-          title='Laptop testing1'
+          title='Background Remove'
           description='React Js'
-          image={about2}
-          projectUrl='/about1'
+          image={BackgroundRemoval}
+          projectUrl='/bg-remove'
         />
         <ProjectItem
           title='Laptop testing3'
@@ -28,7 +28,7 @@ export const Projects = () => {
         <ProjectItem
           title='Laptop testing2'
           description='React Js'
-          image={about2}
+          image={BackgroundRemoval}
           projectUrl='/about1'
         />
       </div>

@@ -13,7 +13,7 @@ export const Contact = () => {
           {/* Left */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='lg:p-4 h-full'>
-              <div className=' shadow-xl shadow-gray-400 rounded-xl p-2 bg-secondary'>
+              <div className=' shadow-xl shadow-gray-400 rounded-xl p-1 bg-secondary'>
                 <img
                   className='rounded-xl hover:scale-105 ease-in duration-300 w-full max-h-[400px] object-fill'
                   src={imageContact}

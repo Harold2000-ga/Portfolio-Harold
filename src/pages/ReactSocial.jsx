@@ -28,7 +28,7 @@ export const ReactSocial = () => {
             protected with JWT.
           </p>
           <a
-            href='https://github.com/Harold2000-ga/Social-Network/tree/main'
+            href='https://hg-social-network.vercel.app/'
             target='_blank'
             className='px-8 py-3 mt-4 mr-8  bg-primary opacity-80 text-white uppercase rounded-lg cursor-pointer hover:opacity-100 shadow-gray-400 shadow-xl'
             rel='noreferrer'
@@ -36,7 +36,7 @@ export const ReactSocial = () => {
             Demo
           </a>
           <a
-            href='https://hg-social-network.vercel.app/'
+            href='https://github.com/Harold2000-ga/Social-Network/tree/main'
             target='_blank'
             className='inline-block px-8 py-3 mt-4 bg-primary opacity-80 text-white uppercase rounded-lg cursor-pointer hover:opacity-100 shadow-gray-400 shadow-xl'
             rel='noreferrer'
@@ -48,24 +48,24 @@ export const ReactSocial = () => {
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonLine className='pr-1 mr-3' />
+              <p className='text-gray-600 py-2 pl-3 flex items-center'>
+                <RiRadioButtonLine className='pr-1 mr-3 text-primary' />
                 React JS
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonLine className='pr-1 mr-3' />
+              <p className='text-gray-600 py-2 pl-3 flex items-center'>
+                <RiRadioButtonLine className='pr-1 mr-3 text-primary' />
                 Node JS
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonLine className='pr-1 mr-3' />
+              <p className='text-gray-600 py-2 pl-3 flex items-center'>
+                <RiRadioButtonLine className='pr-1 mr-3 text-primary' />
                 Express
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonLine className='pr-1 mr-3' />
+              <p className='text-gray-600 py-2 pl-3 flex items-center'>
+                <RiRadioButtonLine className='pr-1 mr-3 text-primary' />
                 MongoDB
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonLine className='pr-1 mr-3' />
+              <p className='text-gray-600 py-2 pl-3 flex items-center'>
+                <RiRadioButtonLine className='pr-1 mr-3 text-primary' />
                 JWT
               </p>
             </div>
