@@ -21,7 +21,12 @@ export const Navbar = () => {
         setNavBg('#3a4e48')
       } else {
         setShadow(false)
-        if (location.pathname.includes('reactsocial') || location.pathname.includes('bg-remove')) {
+        if (
+          location.pathname.includes('reactsocial') ||
+          location.pathname.includes('bg-remove') ||
+          location.pathname.includes('christmas') ||
+          location.pathname.includes('weather')
+        ) {
           setNavBg('transparent')
         } else {
           setNavBg('#3a4e48')
@@ -29,7 +34,12 @@ export const Navbar = () => {
       }
     }
 
-    if (location.pathname.includes('reactsocial') || location.pathname.includes('bg-remove')) {
+    if (
+      location.pathname.includes('reactsocial') ||
+      location.pathname.includes('bg-remove') ||
+      location.pathname.includes('christmas') ||
+      location.pathname.includes('weather')
+    ) {
       setNavBg('transparent')
     } else {
       setNavBg('#3a4e48')
@@ -49,7 +59,7 @@ export const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <HashLink to='/#Home'>
-          <img src={logo} loading='lazy' alt='Logo' className='w-28 h-14 md:w-32 md:h-16' />
+          <img src={logo} loading='lazy' alt='Logo' />
         </HashLink>
         <div>
           {/* Nav md and xl device */}

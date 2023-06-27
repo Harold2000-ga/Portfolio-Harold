@@ -18,7 +18,7 @@ export const Skills = () => {
           <IconsSkill name='HTML' icon={html} />
           <IconsSkill name='CSS' icon={css} />
           <IconsSkill name='JavaScript' icon={js} />
-          <IconsSkill name='Tailwind' icon={tailwind} />
+          <IconsSkill name='Tailwind CSS' icon={tailwind} />
           <IconsSkill name='React' icon={react} />
           <IconsSkill name='Node JS' icon={node} />
           <IconsSkill name='Mongo DB' icon={mongo} />

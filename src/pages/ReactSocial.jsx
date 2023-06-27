@@ -1,6 +1,6 @@
 import { RiRadioButtonLine } from 'react-icons/ri'
 import { HashLink } from 'react-router-hash-link'
-import ReactSocialImage from '../../src/assets/Others/ReactSocial.png'
+import ReactSocialImage from '../../src/assets/Others/ReactSocialBanner.png'
 
 export const ReactSocial = () => {
   return (
