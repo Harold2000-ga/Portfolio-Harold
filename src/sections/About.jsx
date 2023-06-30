@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import { HashLink } from 'react-router-hash-link'
-import about1 from '../assets/Others/about1.jpg'
+import about1 from '../assets/Others/about.jpg'
 export const About = () => {
   return (
     <article id='about' className='w-full md:h-screen p-2 flex items-center py-16'>

@@ -7,7 +7,7 @@ export const Contact = () => {
     <div id='Contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] mx-auto px-2 py-16 w-full'>
         <p className='uppercase text-primary text-xl tracking-widest'>Contact me</p>
-        <h2 className='py-4'>Get In Touch</h2>
+        <h2 className='py-4'>Get In To uch</h2>
 
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* Left */}
