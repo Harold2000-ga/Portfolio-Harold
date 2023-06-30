@@ -5,6 +5,7 @@ import { ReactSocial } from '../pages/ReactSocial'
 import { BgRemove } from '../pages/BgRemove'
 import { Christmas } from '../pages/ChristmasGifts'
 import { Weather } from '../pages/Weather'
+import { Netflix } from '../pages/Netflix'
 
 export const Routing = () => {
   return (
@@ -15,6 +16,7 @@ export const Routing = () => {
         <Route path='/christmas' element={<Christmas />} />
         <Route path='/bg-remove' element={<BgRemove />} />
         <Route path='/weather' element={<Weather />} />
+        <Route path='/netflix' element={<Netflix />} />
         <Route index element={<PagePrincipal />} />
         <Route path='*' element={<PagePrincipal />} />
       </Routes>

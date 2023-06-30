@@ -3,6 +3,7 @@ import ReactSocialImage from '../../src/assets/Others/ReactSocial.png'
 import BackgroundRemovalImage from '../../src/assets/Others/bg-remove.png'
 import ChristmasImage from '../../src/assets/Others/ChristmasGifts.png'
 import WeatherImage from '../../src/assets/Others/Weather.png'
+import NetflixImage from '../../src/assets/Others/Netflix.png'
 
 export const Projects = () => {
   return (
@@ -34,10 +35,11 @@ export const Projects = () => {
       <p className='text-xl tracking-widest uppercase text-primary my-8'>Small-Projects</p>
       <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8'>
         <ProjectItem
-          title='Christmas Gifts'
-          description='React JS'
-          image={ChristmasImage}
-          projectUrl='/christmas'
+          grid={3}
+          title='Netflix Mirror'
+          description='React Js'
+          image={NetflixImage}
+          projectUrl='/netflix'
         />
         <ProjectItem
           title='Country Weather'
@@ -46,11 +48,10 @@ export const Projects = () => {
           projectUrl='/weather'
         />
         <ProjectItem
-          grid={3}
-          title='Laptop testing3'
-          description='React Js'
+          title='Christmas Gifts'
+          description='React JS'
           image={ChristmasImage}
-          projectUrl='/about1'
+          projectUrl='/christmas'
         />
       </div>
     </div>

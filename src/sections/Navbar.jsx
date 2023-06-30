@@ -25,6 +25,7 @@ export const Navbar = () => {
           location.pathname.includes('reactsocial') ||
           location.pathname.includes('bg-remove') ||
           location.pathname.includes('christmas') ||
+          location.pathname.includes('netflix') ||
           location.pathname.includes('weather')
         ) {
           setNavBg('transparent')
@@ -38,6 +39,7 @@ export const Navbar = () => {
       location.pathname.includes('reactsocial') ||
       location.pathname.includes('bg-remove') ||
       location.pathname.includes('christmas') ||
+      location.pathname.includes('netflix') ||
       location.pathname.includes('weather')
     ) {
       setNavBg('transparent')
@@ -55,7 +57,7 @@ export const Navbar = () => {
   return (
     <nav
       style={{ backgroundColor: navBg }}
-      className={`fixed w-full h-20 ${shadow ? 'shadow-xl' : ''} z-[100] bg-secondary`}
+      className={`fixed w-full h-16 ${shadow ? 'shadow-xl' : ''} z-[100] bg-secondary`}
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <HashLink to='/#Home'>
