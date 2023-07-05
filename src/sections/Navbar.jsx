@@ -26,6 +26,7 @@ export const Navbar = () => {
           location.pathname.includes('bg-remove') ||
           location.pathname.includes('christmas') ||
           location.pathname.includes('netflix') ||
+          location.pathname.includes('ordering') ||
           location.pathname.includes('weather')
         ) {
           setNavBg('transparent')
@@ -40,6 +41,7 @@ export const Navbar = () => {
       location.pathname.includes('bg-remove') ||
       location.pathname.includes('christmas') ||
       location.pathname.includes('netflix') ||
+      location.pathname.includes('ordering') ||
       location.pathname.includes('weather')
     ) {
       setNavBg('transparent')

@@ -4,6 +4,7 @@ import BackgroundRemovalImage from '../../src/assets/Others/bg-remove.png'
 import ChristmasImage from '../../src/assets/Others/ChristmasGifts.png'
 import WeatherImage from '../../src/assets/Others/Weather.png'
 import NetflixImage from '../../src/assets/Others/Netflix.png'
+import OrderingImage from '../../src/assets/Others/Ordering.png'
 
 export const Projects = () => {
   return (
@@ -26,21 +27,14 @@ export const Projects = () => {
 
         <ProjectItem
           grid={3}
-          title='Laptop testing3'
-          description='React Js'
-          image={ReactSocialImage}
-          projectUrl='/about1'
-        />
-      </div>
-      <p className='text-xl tracking-widest uppercase text-primary my-8'>Small-Projects</p>
-      <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8'>
-        <ProjectItem
-          grid={3}
           title='Netflix Mirror'
           description='React Js'
           image={NetflixImage}
           projectUrl='/netflix'
         />
+      </div>
+      <p className='text-xl tracking-widest uppercase text-primary my-8'>Small-Projects</p>
+      <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8'>
         <ProjectItem
           title='Country Weather'
           description='React JS'
@@ -52,6 +46,13 @@ export const Projects = () => {
           description='React JS'
           image={ChristmasImage}
           projectUrl='/christmas'
+        />
+        <ProjectItem
+          grid={3}
+          title='Ordering UI'
+          description='React Js'
+          image={OrderingImage}
+          projectUrl='/ordering'
         />
       </div>
     </div>
