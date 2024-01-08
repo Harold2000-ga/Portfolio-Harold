@@ -7,6 +7,8 @@ import react from '../assets/skills/React.png'
 import node from '../assets/skills/Node JS.png'
 import mongo from '../assets/skills/Mongo DB.png'
 import git from '../assets/skills/Git.png'
+import next from '../assets/skills/Nextjs.png'
+import typescript from '../assets/skills/Typescript.png'
 
 export const Skills = () => {
   return (
@@ -23,6 +25,8 @@ export const Skills = () => {
           <IconsSkill name='Node JS' icon={node} />
           <IconsSkill name='Mongo DB' icon={mongo} />
           <IconsSkill name='Git' icon={git} />
+          <IconsSkill name='Next JS' icon={next} />
+          <IconsSkill name='Typescript' icon={typescript} />
         </div>
       </div>
     </div>
